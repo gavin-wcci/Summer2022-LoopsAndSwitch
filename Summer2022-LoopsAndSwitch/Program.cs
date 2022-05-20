@@ -8,7 +8,7 @@ string userInput = Console.ReadLine();
 switch (userInput)
 {
     case "1":
-    //you can add another case
+    //you can add another case for the code to run before the break
     case "one":
         Console.WriteLine("You chose the number one.");
         break;
@@ -79,34 +79,35 @@ if (condition)
 }
 
 //3 parts of a loop
-//start
-//condition to check
-// a way to stop the loop
+    //start
+    //condition to check
+    // a way to stop the loop
 
 //While loop
-//int x = 1036;
-//while (x >= 1)
-//{
-//    Console.WriteLine(x);
-//    string stop = Console.ReadLine();
-//    if (stop == "y")
-//    {
-//        //the break statement will break out of a loop, but try to do this by setting up a condition rather than using break
-//        break;
-//    }
-//}
+int x = 1036;
+while (x >= 1)
+{
+    Console.WriteLine(x);
+    string stop = Console.ReadLine();
+    if (stop == "y")
+    {
+        //the break statement will break out of a loop, but try to do this by setting up a condition rather than using break
+        break;
+    }
+}
 
 
-//do while loop
-//while(x >= 1037)
-//{
-//    Console.WriteLine(x);
-//}
-
-//do
-//{
-//    Console.WriteLine(x);
-//} while (x >= 1037);
+//Do While loop
+//the following while loop won't print anything because the condition is false
+while (x >= 1037)
+{
+    Console.WriteLine(x);
+}
+//the do while loop will run the code
+do
+{
+    Console.WriteLine(x);
+} while (x >= 1037);
 
 //For loop
 //task: count to ten
@@ -116,7 +117,8 @@ while (num <= 10)
     Console.WriteLine(num);
     num++;
 }
-
+//we can do the same thing with a for loop
+//for(setup a variable; condition to check; what we do after the code is run){action taken}
 for(int i = 1; i <= 10; i++)
 {
     Console.WriteLine(i);
